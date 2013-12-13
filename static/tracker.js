@@ -60,10 +60,6 @@ var monster={set:function(a,b,c,d,e){var f=new Date,g="",h=typeof b,i="",j="";if
             monster.set(hncCN, cooks, 3560);
         }
 
-
-
-
-
         for(var i=0;i<preQ.length;i++){
             _hnc.apply(window, preQ[i])
         }

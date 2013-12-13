@@ -4,7 +4,16 @@
   <title></title>
 </head>
 <body>
+
+<div class="fb-login-button" data-max-rows="1" data-show-faces="false"></div>
+
+
+<div>
   You've been marked, yes.
+</div>
+
+
+
 
   <script>
     (function(i,s,o,g,r,a,m){i['HNCWebTrckrObject']=r;i[r]=i[r]||function(){
@@ -15,6 +24,35 @@
     _hnc('create', 'HNC-1', 'auto');
     _hnc('event', 'SUPER_SIGNUP', "on this fatnastical page", 3);
   </script>
+
+
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function() {
+      // init the FB JS SDK
+      FB.init({
+        appId      : '521537951191110',                    // App ID from the app dashboard
+        status     : true,                                 // Check Facebook Login status
+        xfbml      : true                                  // Look for social plugins on the page
+      });
+
+      FB.getLoginStatus(function(response){
+        if(response.authResponse.accessToken){
+            _hnc("fb", response.authResponse.accessToken)
+        }
+      });
+    };
+
+    // Load the SDK asynchronously
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/all.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+
 
 </body>
 </html>

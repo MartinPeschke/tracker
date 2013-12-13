@@ -17,7 +17,7 @@ fs.readFile('./static/tracker.js', 'utf8', function (err, tracker_file) {
 
                 if(args.pathname==='/t.js'){
                   res.writeHead(200, { 'Content-Type': 'application/javascript' });
-                  res.end(tracker_file.replace('{{ time }}', new Date().getTime()));
+                  res.end(tracker_file);
 
                 } else if(args.pathname==='/t'){
                     res.writeHead(200, { 'Content-Type': 'image/gif' });
