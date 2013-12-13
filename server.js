@@ -21,5 +21,6 @@ fs.readFile('./static/tracker.js', 'utf8', function (err, tracker_file) {
           res.end('<!DOCTYPE html><html><head></head><body><script src="/t.js"></script></body></html>');
         }
     }).listen(port);
+
 });
 
