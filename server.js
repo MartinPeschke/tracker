@@ -1,22 +1,22 @@
 var http = require('http')
-var url = require("url");
 var azure = require('azure')
+var url = require("url")
 var port = process.env.PORT || 1337;
 
-var js_tracker = 'document.write("Welcome Fucker!");document.close();';
+var js_tracker = 'document.write("Welcome Fucker!");document.close();'
 
 http.createServer(function(req, res) {
-	var args = url.parse(request.url, true);
-	request.method = request.method.toUpperCase();
-	request.args =
+	var args = url.parse(req.url, true);
+	req.method = req.method.toUpperCase();
+	req.args =
 	{
 		query: args.query
 	};
-	if(args.pathname==='t.js'){
+	if(args.pathname==='/t.js'){
 	  res.writeHead(200, { 'Content-Type': 'application/javascript' });
 	  res.end(js_tracker);
 	} else {
-	  res.writeHead(404, { 'Content-Type': 'text/plain' });
-	  res.end("Not Found");
+	  res.writeHead(200, { 'Content-Type': 'text/html' });
+	  res.end('<!DOCTYPE html><html><head></head><body><script src="/t.js"></script></body></html>');
 	}
 }).listen(port);

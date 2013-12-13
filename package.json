@@ -1,0 +1,17 @@
+{
+  "name": "hnc-tracker",
+  "title": "hnc tracking package",
+  "description": "track",
+  "version": "0.0.1",
+  "homepage": "https://github.com/MartinPeschke/tracker",
+  "author": {
+    "name": "Martin Peschke",
+    "email": "martin@hackandcraft.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:MartinPeschke/tracker.git"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
