@@ -10,14 +10,13 @@ var js_tracker = function(d){
 http.createServer(function(req, res) {
 	var args = url.parse(req.url, true);
 	req.method = req.method.toUpperCase();
-	req.args =
-	{
-		query: args.query
-	};
+	req.args ={query: args.query};
+	
 	if(args.pathname==='/t.js'){
 	  res.writeHead(200, { 'Content-Type': 'application/javascript' });
 	  var date = new Date();
 	  res.end(js_tracker(date));
+	
 	} else {
 	  res.writeHead(200, { 'Content-Type': 'text/html' });
 	  res.end('<!DOCTYPE html><html><head></head><body><script src="/t.js"></script></body></html>');
