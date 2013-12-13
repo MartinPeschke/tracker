@@ -4,7 +4,7 @@ var url = require("url")
 var port = process.env.PORT || 1337;
 
 var js_tracker = function(d){
-	return 'document.write("Welcome Fucker! - fetched at:'+d.getTime()+'");document.close();'
+	return 'document.write("Welcome home! - fetched at:'+d.getTime()+'");document.close();'
 }
 
 http.createServer(function(req, res) {
