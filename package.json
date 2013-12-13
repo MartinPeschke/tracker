@@ -12,6 +12,6 @@
     "type": "git",
     "url": "git@github.com:MartinPeschke/tracker.git"
   },
-  "dependencies": {},
+  "dependencies": {"azure":"~0.7"},
   "devDependencies": {}
 }
