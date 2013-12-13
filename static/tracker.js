@@ -51,7 +51,7 @@ var monster={set:function(a,b,c,d,e){var f=new Date,g="",h=typeof b,i="",j="";if
                 domain = arguments[2];
                 pixel({'cmd':"page_view"})
             } else {
-                pixel({'cmd':cmd, args: sl.call(arguments, 1)})
+                pixel({'cmd':cmd, args: sl.call(arguments, 1).join("-|-")})
             }
         };
 
