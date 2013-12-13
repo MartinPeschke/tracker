@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b46cdbbb-72d4-46b6-93e3-3b8c18b87ff1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/index.html" afterPath="$PROJECT_DIR$/static/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/tracker.js" afterPath="$PROJECT_DIR$/static/tracker.js" />
     </list>
     <ignored path="tracker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,7 +36,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="5" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.592789" vertical-offset="0" max-vertical-offset="943">
+            <state line="42" column="87" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.57900316" vertical-offset="0" max-vertical-offset="943">
               <folding />
             </state>
           </provider>
@@ -398,7 +396,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="5" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.592789" vertical-offset="0" max-vertical-offset="943">
+        <state line="42" column="87" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.57900316" vertical-offset="0" max-vertical-offset="943">
           <folding />
         </state>
       </provider>
