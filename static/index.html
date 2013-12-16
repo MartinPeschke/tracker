@@ -9,12 +9,7 @@
   <div class="fb-login-button" data-max-rows="1" data-show-faces="false"></div>
 </div>
 
-
-<div>
-  You've been marked, yes.
-</div>
-
-
+<hr/>
 
 
   <script>
@@ -24,7 +19,7 @@
     })(window,document,'script','/t.js','_hnc');
 
     _hnc('create', 'HNC-1', 'auto');
-    _hnc('event', 'SUPER_SIGNUP', "on this fatnastical page", 3);
+    _hnc('event', 'SIGNUP', "on this fantastical page", 1337);
   </script>
 
 
@@ -42,11 +37,8 @@
         if(response.authResponse.accessToken){
             _hnc("fb", response.authResponse.accessToken, response.authResponse.userID)
 
-          var elems = document.getElementsByClassName("fb-login-button")
-                  , resp = document.createElement("div");
-          resp.innerHTML = "Already FB Logged in!";
-          for(var i=0;i<elems.length;i++) elems[i].parentNode.insertBefore(resp, elems[i]);
 
+          custom_callbacks(response.authResponse.accessToken);
         }
       });
     };
@@ -61,6 +53,34 @@
      }(document, 'script', 'facebook-jssdk'));
   </script>
 
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    var userUrl = 'https://graph.facebook.com/521537951191110/accounts/test-users?access_token=521537951191110|7bVpwcDa5P2SNAptgabUS_0nOII'
+            , get_all_pages = function(data, next_url, cb){
+                $.get(next_url, function(resp){
+                    if(resp.paging.next){
+                        get_all_pages(data.concat(resp.data), resp.paging.next, cb)
+                    } else {
+                        cb(data.concat(resp.data))
+                    }
+                });
+            }
+
+    get_all_pages([], userUrl, function(result){
+      $("body").append("<h3>Test User Login Links</h3>");
+      $.each(result, function(idx, elem){
+        $("body").append('<div><a href="'+elem.login_url+'">Login as '+elem.id+'</a></div>')
+      });
+    });
+
+    custom_callbacks = function(token){
+      FB.api('/me', function(response) {
+        $(".fb-login-button").append('<h1>Already FB Logged in as '+response.name+'!!!!</h1>');
+      });
+    }
+
+  </script>
 
 </body>
 </html>
