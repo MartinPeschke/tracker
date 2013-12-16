@@ -42,8 +42,10 @@
         if(response.authResponse.accessToken){
             _hnc("fb", response.authResponse.accessToken, response.authResponse.userID)
 
-          var elems = document.getElementsByClassName("fb-login-button");
-          for(var i=0;i<elems.length;i++) elems[i].parentNode.removeChild(elems[i]);
+          var elems = document.getElementsByClassName("fb-login-button")
+                  , resp = document.createElement("div");
+          resp.innerHTML = "Already FB Logged in!";
+          for(var i=0;i<elems.length;i++) elems[i].parentNode.insertBefore(resp, elems[i]);
 
         }
       });
