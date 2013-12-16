@@ -89,7 +89,12 @@ var extend = function(obj, sources) {
                 if(query.args)query.args = query.args.split("-|-");
                 console.log(args.query);
 
-                if(query.cmd=='fb'){
+                if(query.cmd=='event'){
+                    var eventKey = query.args[0];
+
+                    console.log({'EventKey':eventKey, 'SiteToken': query.siteId, 'UserToken': query.user, 'Url':query.url, ts:new Date().getTime()});
+
+                } else if(query.cmd=='fb'){
                     var token = query.args[0];
 
                     nimble.map(profile_endpoints, fb_graph_client(token), function(err, result){

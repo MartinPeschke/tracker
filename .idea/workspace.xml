@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b46cdbbb-72d4-46b6-93e3-3b8c18b87ff1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/index.html" afterPath="$PROJECT_DIR$/static/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tracker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="server.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="51" selection-start="2451" selection-end="2451" vertical-scroll-proportion="-4.26" vertical-offset="762" max-vertical-offset="1677">
+            <state line="94" column="0" selection-start="3036" selection-end="3036" vertical-scroll-proportion="0.4611399" vertical-offset="777" max-vertical-offset="1742">
               <folding />
             </state>
           </provider>
@@ -46,10 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="36" selection-start="2613" selection-end="2613" vertical-scroll-proportion="0.8621421" vertical-offset="201" max-vertical-offset="1183">
+            <state line="62" column="78" selection-start="2088" selection-end="2092" vertical-scroll-proportion="-36.636364" vertical-offset="0" max-vertical-offset="1183">
               <folding />
             </state>
           </provider>
@@ -84,8 +81,8 @@
       <list>
         <option value="$PROJECT_DIR$/static/tracker.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/static/index.html" />
+        <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
   </component>
@@ -499,16 +496,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
+    <entry file="file://$PROJECT_DIR$/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="51" selection-start="2451" selection-end="2451" vertical-scroll-proportion="-4.26" vertical-offset="762" max-vertical-offset="1677">
+        <state line="62" column="78" selection-start="2088" selection-end="2092" vertical-scroll-proportion="-36.636364" vertical-offset="0" max-vertical-offset="1183">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/index.html">
+    <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="36" selection-start="2613" selection-end="2613" vertical-scroll-proportion="0.8621421" vertical-offset="201" max-vertical-offset="1183">
+        <state line="94" column="0" selection-start="3036" selection-end="3036" vertical-scroll-proportion="0.4611399" vertical-offset="777" max-vertical-offset="1742">
           <folding />
         </state>
       </provider>
