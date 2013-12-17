@@ -30,6 +30,7 @@ var extend = function(obj, sources) {
             req.args ={query: args.query};
 
             if(args.pathname==='/t'){
+                var ts = new Date().getTime();
                 res.writeHead(200, { 'Content-Type': 'image/gif' });
                 res.end(pixel, 'binary');
 
@@ -38,10 +39,11 @@ var extend = function(obj, sources) {
                 if(query.args)query.args = query.args.split("-|-");
 
                 if(!query.cmd){return;}
-                if(query.cmd=='event'){
-                    var eventKey = query.args[0]
-                        , msg = JSON.stringify({'EventKey':eventKey.toUpperCase(), 'SiteToken': query.siteId, 'UserToken': query.user, 'Url':query.url, ts:new Date().getTime()});
 
+                if(query.cmd=='event'&&query.args){
+                    var eventKey = query.args[0]
+                        , msg = JSON.stringify({'EventKey':eventKey.toUpperCase(), 'SiteToken': query.siteId, 'UserToken': query.user, 'Url':query.url, ts:ts});
+                    console.log(msg);
                     queueService.createMessage(eventQueueName, msg, function(err){});
 
                 } else if(query.cmd=='fb'){
