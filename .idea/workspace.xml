@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b46cdbbb-72d4-46b6-93e3-3b8c18b87ff1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/index.html" afterPath="$PROJECT_DIR$/static/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/tracker.js" afterPath="$PROJECT_DIR$/static/tracker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
     </list>
     <ignored path="tracker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,28 +27,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="server.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="36" selection-start="1757" selection-end="1757" vertical-scroll-proportion="-9.48" vertical-offset="215" max-vertical-offset="1001">
+            <state line="48" column="51" selection-start="1662" selection-end="1679" vertical-scroll-proportion="0.2032885" vertical-offset="488" max-vertical-offset="1157">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fb.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="fb.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libs/fb.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="18" selection-start="506" selection-end="506" vertical-scroll-proportion="0.33034378" vertical-offset="0" max-vertical-offset="754">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tracker.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/tracker.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="112" selection-start="2421" selection-end="2421" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="962">
+            <state line="14" column="7" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="754">
               <folding />
             </state>
           </provider>
@@ -65,14 +57,9 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="258" column="98" selection-start="8335" selection-end="8335" vertical-scroll-proportion="-4.861111" vertical-offset="3004" max-vertical-offset="3718">
+            <state line="40" column="24" selection-start="805" selection-end="805" vertical-scroll-proportion="0.3611111" vertical-offset="546" max-vertical-offset="3731">
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1387285284313" expanded="true" signature="7393:8408" placeholder="{...}" />
-                <marker date="1387285284313" expanded="true" signature="7428:8391" placeholder="{...}" />
-                <marker date="1387285284313" expanded="true" signature="8126:8375" placeholder="{...}" />
-                <marker date="1387285284313" expanded="true" signature="8176:8356" placeholder="{...}" />
-                <marker date="1387285284313" expanded="true" signature="8235:8334" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -98,9 +85,9 @@
       <list>
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/libs/fb.js" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/static/tracker.js" />
         <option value="$PROJECT_DIR$/static/index.html" />
+        <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
   </component>
@@ -362,7 +349,11 @@
     </configuration>
     <configuration default="false" name="NodeTracker" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
       <envs>
+        <env name="AZURE_QUEUE_NAME_EVENTS" value="test-queue" />
         <env name="PORT" value="80" />
+        <env name="AZURE_STORAGE_ACCOUNT" value="booksys" />
+        <env name="AZURE_QUEUE_NAME_FB" value="test-queue-fb" />
+        <env name="AZURE_STORAGE_ACCESS_KEY" value="BS323SGwtVqgJF+mx3JGpWF81e4rGqt7CHUEJoeu4SsBtO+S+lm9tmx1E6qG68VQ6WFhSPliPMs7ji4QMaTjEQ==" />
       </envs>
       <browser start="false" url="" with-js-debugger="false" />
       <RunnerSettings RunnerId="NodeJS.debug" />
@@ -374,6 +365,23 @@
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b46cdbbb-72d4-46b6-93e3-3b8c18b87ff1" name="Default" comment="" />
@@ -457,11 +465,6 @@
         <state line="35" column="13" selection-start="750" selection-end="755" vertical-scroll-proportion="0.0" vertical-offset="455" max-vertical-offset="923">
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1387285284313" expanded="true" signature="7393:8408" placeholder="{...}" />
-            <marker date="1387285284313" expanded="true" signature="7428:8391" placeholder="{...}" />
-            <marker date="1387285284313" expanded="true" signature="8126:8375" placeholder="{...}" />
-            <marker date="1387285284313" expanded="true" signature="8176:8356" placeholder="{...}" />
-            <marker date="1387285284313" expanded="true" signature="8235:8334" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -485,11 +488,6 @@
         <state line="17" column="0" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="897">
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1387285284313" expanded="true" signature="7393:8408" placeholder="{...}" />
-            <marker date="1387285284313" expanded="true" signature="7428:8391" placeholder="{...}" />
-            <marker date="1387285284313" expanded="true" signature="8126:8375" placeholder="{...}" />
-            <marker date="1387285284313" expanded="true" signature="8176:8356" placeholder="{...}" />
-            <marker date="1387285284313" expanded="true" signature="8235:8334" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -513,11 +511,6 @@
         <state line="42" column="87" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.0" vertical-offset="546" max-vertical-offset="897">
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1387285284313" expanded="true" signature="7393:8408" placeholder="{...}" />
-            <marker date="1387285284313" expanded="true" signature="7428:8391" placeholder="{...}" />
-            <marker date="1387285284313" expanded="true" signature="8126:8375" placeholder="{...}" />
-            <marker date="1387285284313" expanded="true" signature="8176:8356" placeholder="{...}" />
-            <marker date="1387285284313" expanded="true" signature="8235:8334" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -557,13 +550,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="36" selection-start="1757" selection-end="1757" vertical-scroll-proportion="-9.48" vertical-offset="215" max-vertical-offset="1001">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="7" selection-start="403" selection-end="403" vertical-scroll-proportion="-9.454545" vertical-offset="0" max-vertical-offset="338">
@@ -571,30 +557,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/tracker.js">
+    <entry file="file://$PROJECT_DIR$/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="112" selection-start="2421" selection-end="2421" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="962">
-          <folding />
+        <state line="40" column="24" selection-start="805" selection-end="805" vertical-scroll-proportion="0.3611111" vertical-offset="546" max-vertical-offset="3731">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/index.html">
+    <entry file="file://$PROJECT_DIR$/static/tracker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="258" column="98" selection-start="8335" selection-end="8335" vertical-scroll-proportion="-4.861111" vertical-offset="3004" max-vertical-offset="3718">
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1387285284313" expanded="true" signature="7393:8408" placeholder="{...}" />
-            <marker date="1387285284313" expanded="true" signature="7428:8391" placeholder="{...}" />
-            <marker date="1387285284313" expanded="true" signature="8126:8375" placeholder="{...}" />
-            <marker date="1387285284313" expanded="true" signature="8176:8356" placeholder="{...}" />
-            <marker date="1387285284313" expanded="true" signature="8235:8334" placeholder="{...}" />
-          </folding>
+        <state line="55" column="10" selection-start="2783" selection-end="2783" vertical-scroll-proportion="0.7405462" vertical-offset="10" max-vertical-offset="962">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/libs/fb.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="18" selection-start="506" selection-end="506" vertical-scroll-proportion="0.33034378" vertical-offset="0" max-vertical-offset="754">
+        <state line="14" column="7" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="754">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/azure/lib/services/queue/models/queuemessageresult.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="22" selection-start="1267" selection-end="1277" vertical-scroll-proportion="0.6196891" vertical-offset="0" max-vertical-offset="1196">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/azure/lib/services/queue/queueservice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="482" column="69" selection-start="23381" selection-end="23392" vertical-scroll-proportion="0.46953782" vertical-offset="5637" max-vertical-offset="9620">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="51" selection-start="1662" selection-end="1679" vertical-scroll-proportion="0.2032885" vertical-offset="488" max-vertical-offset="1157">
           <folding />
         </state>
       </provider>
