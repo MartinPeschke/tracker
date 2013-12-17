@@ -10,7 +10,29 @@
 </div>
 
 <hr/>
+    <div style="float:right;" class="total"></div>
 
+<div>
+  <form id="run-events-form">
+    <select class="no-runs">
+      <option>1</option>
+      <option>10</option>
+      <option>100</option>
+      <option>1000</option>
+      <option>5000</option>
+    </select>
+    <select class="no-users">
+      <option>1</option>
+      <option>10</option>
+      <option>100</option>
+      <option>1000</option>
+      <option>5000</option>
+    </select>
+    <button type="submit">Run x Tests with y users Users</button>
+  </form>
+</div>
+
+<hr/>
 
 <div>
   <form id="create-user-form">
@@ -42,145 +64,218 @@
 
 </div>
 
-  <script>
-    // ============== TRACKER ==============
-    (function(i,s,o,g,r,a,m){i['HNCWebTrckrObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','/t.js','_hnc');
-    _hnc('create', 'HNC-1', 'auto');
-    _hnc('event', 'SIGNUP', "on this fantastical page", 1337);
-  </script>
+<script>
+  // ============== TRACKER ==============
+  (function (i, s, o, g, r, a, m) {
+    i['HNCWebTrckrObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '/t.js', '_hnc');
+  _hnc('create', 'HNC-1', 'auto');
+  _hnc('event', 'SIGNUP', "on this fantastical page", 1337);
+</script>
 
 
-  <div id="fb-root"></div>
-  <script>
-    //  ============== FACEBOOK ==============
-    window.fbAsyncInit = function() {
-      // init the FB JS SDK
-      FB.init({
-        appId      : '521537951191110',                    // App ID from the app dashboard
-        status     : true,                                 // Check Facebook Login status
-        xfbml      : true                                  // Look for social plugins on the page
-      });
-      FB.getLoginStatus(function(response){
-        if(response.authResponse.accessToken){
-            _hnc("fb", response.authResponse.accessToken, response.authResponse.userID)
-
-          custom_callbacks(response.authResponse.accessToken);
-        }
-      });
-    };
-    (function(d, s, id){
-       var js, fjs = d.getElementsByTagName(s)[0];
-       if (d.getElementById(id)) {return;}
-       js = d.createElement(s); js.id = id;
-       js.src = "//connect.facebook.net/en_US/all.js";
-       fjs.parentNode.insertBefore(js, fjs);
-     }(document, 'script', 'facebook-jssdk'));
-  </script>
-
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script>
-    var dec2hex = [];for (var i=0; i<=15; i++) {dec2hex[i] = i.toString(16);}
-    var UUID = function() {
-        var uuid = '';
-        for (var i=1; i<=36; i++) {
-            if (i===9 || i===14 || i===19 || i===24) {
-                uuid += '-';
-            } else if (i===15) {
-                uuid += 4;
-            } else if (i===20) {
-                uuid += dec2hex[(Math.random()*4|0 + 8)];
-            } else {
-                uuid += dec2hex[(Math.random()*15|0)];
-            }
-        }
-        return uuid;
-    };
-
-    /// ============== CUSTOM CODE
-    var APP_ACCESS_TOKEN = '521537951191110|7bVpwcDa5P2SNAptgabUS_0nOII'
-            , APP_ID = '521537951191110';
-
-    var userUrl = 'https://graph.facebook.com/'+APP_ID+'/accounts/test-users?access_token=' + APP_ACCESS_TOKEN
-            , get_all_pages = function(data, next_url, cb){
-                $.get(next_url, function(resp){
-                    if(resp.paging.next){
-                        get_all_pages(data.concat(resp.data), resp.paging.next, cb)
-                    } else {
-                        cb(data.concat(resp.data))
-                    }
-                });
-            }
-            , show_user = function(idx, user){
-              $("body").append('<div class="fb-test-user" data-entity-id="'+user.id+'" data-access-token="'+user.access_token+'"><a href="'+user.login_url+'">Login as '+user.id+'</a></div>');
-            };
-
-    get_all_pages([], userUrl, function(result){
-      $("body").append("<h3>Test User Login Links</h3>");
-      $.each(result, show_user);
+<div id="fb-root"></div>
+<script>
+  //  ============== FACEBOOK ==============
+  window.fbAsyncInit = function () {
+    // init the FB JS SDK
+    FB.init({
+      appId: '521537951191110',                    // App ID from the app dashboard
+      status: true,                                 // Check Facebook Login status
+      xfbml: true                                  // Look for social plugins on the page
     });
+    FB.getLoginStatus(function (response) {
+      if (response.authResponse.accessToken) {
+        _hnc("fb", response.authResponse.accessToken, response.authResponse.userID)
+
+        custom_callbacks(response.authResponse.accessToken);
+      }
+    });
+  };
+  (function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {
+      return;
+    }
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
 
 
-    $("#create-user-form").on({submit:function(e){
-      var $form = $(e.target)
-              , n = parseInt($form.find("select").val(), 10)
-              , get_user = function(idx){
-                if(idx<n){
-                  $.get('https://graph.facebook.com/'+APP_ID+'/accounts/test-users?installed=true&locale=en_US&permissions=read_stream&method=post&access_token='+APP_ACCESS_TOKEN, function(resp){
-                    show_user(idx, resp);
-                    get_user(idx+1);
-                  });
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+  var dec2hex = [];
+  for (var i = 0; i <= 15; i++) {
+    dec2hex[i] = i.toString(16);
+  }
+  var UUID = function () {
+            var uuid = '';
+            for (var i = 1; i <= 36; i++) {
+              if (i === 9 || i === 14 || i === 19 || i === 24) {
+                uuid += '-';
+              } else if (i === 15) {
+                uuid += 4;
+              } else if (i === 20) {
+                uuid += dec2hex[(Math.random() * 4 | 0 + 8)];
+              } else {
+                uuid += dec2hex[(Math.random() * 15 | 0)];
+              }
+            }
+            return uuid;
+          }
+          , sample = function (arr, size) {
+            var shuffled = arr.slice(0), i = arr.length, temp, index;
+            while (i--) {
+              index = Math.floor(i * Math.random());
+              temp = shuffled[index];
+              shuffled[index] = shuffled[i];
+              shuffled[i] = temp;
+            }
+            return shuffled.slice(0, size);
+          };
+          var $total = $(".total"), total = 0
+          , handle = setInterval(function(){
+                          $total.html(total);
+              }, 100);
+
+  /// ============== CUSTOM CODE
+  var APP_ACCESS_TOKEN = '521537951191110|7bVpwcDa5P2SNAptgabUS_0nOII'
+          , APP_ID = '521537951191110';
+
+  var userUrl = 'https://graph.facebook.com/' + APP_ID + '/accounts/test-users?access_token=' + APP_ACCESS_TOKEN
+          , get_all_pages = function (data, next_url, cb) {
+            $.get(next_url, function (resp) {
+              if (resp.paging.next) {
+                get_all_pages(data.concat(resp.data), resp.paging.next, cb)
+              } else {
+                cb(data.concat(resp.data))
+              }
+            });
+          }
+          , show_user = function (idx, user) {
+            $("body").append('<div class="fb-test-user" data-entity-id="' + user.id + '" data-access-token="' + user.access_token + '"><a href="' + user.login_url + '">Login as ' + user.id + '</a></div>');
+          };
+
+  get_all_pages([], userUrl, function (result) {
+    $("body").append("<h3>Test User Login Links</h3>");
+    $.each(result, show_user);
+  });
+
+
+  $("#create-user-form").on(
+          {
+            submit: function (e) {
+              var $form = $(e.target)
+                      , runs = parseInt($form.find(".no-runs").val(), 10)
+                      , users = parseInt($form.find(".no-users").val(), 10)
+                      , user_ids = []
+                      , run_kind = $form.find(".run-kind").val()
+                      , all_events = ['signup', 'login', 'buy', 'like', 'comment', 'buy', 'review', 'vote', 'buy', 'logout']
+                      , get_run = function () {
+                        return sample(all_events);
+                      };
+              for (var i = 0; i < users; i++) {
+                user_ids.append(UUID());
+              }
+
+              for (var i = 0; i < runs; i++) {
+                for (var j = 0; j < users; j++) {
+                  $.each(get_run(), function (idx, elem) {
+                    _hnc.pixel({cmd: 'event', args: elem, user: user_ids[j]});
+                  })
                 }
-              };
-      get_user(0);
-      e.preventDefault();
-      e.stopPropagation();
-      return false;
-    }});
+              }
 
-    $("#ping-backend-user-form").on(
-            {
-              submit:function(e){
-                var $form = $(e.target)
-                  , n = parseInt($form.find(".no-runs").val(), 10)
-                  , event = $form.find(".event").val()
-                  , users = $(".fb-test-user")
-                  , total = 0;
-
-                for(var i=0;i<n;i++){
-
-                  if(event == 'fb'){
-                    users.each(function(idx, user){
-                      var d = $(user).data();
-                      total++;
-                      _hnc.pixel({'cmd':'fb', user:UUID(), args:[d.accessToken, d.entityId].join("-|-")})
-                    })
-
-                  } else {
-                    users.each(function(idx, user){
-                      var d = $(user).data();
-                      total++;
-                      _hnc.pixel({cmd:'event', args:event, user:UUID()});
-                    })
-                  }
-                }
               e.preventDefault();
               e.stopPropagation();
               return false;
             }
           }
-    );
+  );
 
-    custom_callbacks = function(token){
-      FB.api('/me', function(response) {
-        $(".fb-login-button").append('<h1>Already FB Logged in as '+response.name+'.</h1>');
-      });
-    }
+  $("#ping-backend-user-form").on(
+          {
+            submit: function (e) {
+              var $form = $(e.target)
+                      , n = parseInt($form.find(".no-runs").val(), 10)
+                      , event = $form.find(".event").val()
+                      , users = $(".fb-test-user")
+                      , total = 0;
 
-  </script>
+              for (var i = 0; i < n; i++) {
+
+                if (event == 'fb') {
+                  users.each(function (idx, user) {
+                    var d = $(user).data();
+                    total++;
+                    _hnc.pixel({'cmd': 'fb', user: UUID(), args: [d.accessToken, d.entityId].join("-|-")})
+                  })
+
+                } else {
+                  users.each(function (idx, user) {
+                    var d = $(user).data();
+                    total++;
+                    _hnc.pixel({cmd: 'event', args: event, user: UUID()});
+                  })
+                }
+              }
+              e.preventDefault();
+              e.stopPropagation();
+              return false;
+            }
+          }
+  );
+
+  $("#run-events-form").on(
+          {
+            submit: function (e) {
+              total = 0;
+              var $form = $(e.target)
+                      , runs = parseInt($form.find(".no-runs").val(), 10)
+                      , users = parseInt($form.find(".no-users").val(), 10)
+                      , user_ids = []
+                      , all_events = ['signup', 'login', 'buy', 'like', 'comment', 'buy', 'review', 'vote', 'buy', 'logout']
+                      , get_run = function () {
+                        return sample(all_events, Math.floor(Math.random() * all_events.length));
+                      };
+              for (var i = 0; i < users; i++) {
+                user_ids.push(UUID());
+              }
+
+              for (var i = 0; i < runs; i++) {
+                for (var j = 0; j < users; j++) {
+                  $.each(get_run(), function (idx, elem) {
+                    _hnc.pixel({cmd: 'event', args: elem, user: user_ids[j]}, function(){total++});
+                  })
+                }
+              }
+
+              e.preventDefault();
+              e.stopPropagation();
+              return false;
+            }
+          }
+  );
+
+
+  custom_callbacks = function (token) {
+    FB.api('/me', function (response) {
+      $(".fb-login-button").append('<h1>Already FB Logged in as ' + response.name + '.</h1>');
+    });
+  }
+
+</script>
 
 </body>
 </html>

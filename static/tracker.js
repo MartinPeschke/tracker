@@ -31,7 +31,7 @@ var monster={set:function(a,b,c,d,e){var f=new Date,g="",h=typeof b,i="",j="";if
             }
           return str.join("&");
         }
-        , pixel = function(args){
+        , pixel = function(args, onl){
             args.siteId = siteId;
             args.domain = domain;
             args.user = args.user||cooks;
@@ -42,6 +42,7 @@ var monster={set:function(a,b,c,d,e){var f=new Date,g="",h=typeof b,i="",j="";if
             a.async=1;
             a.style.display='none';
             a.src="/t?"+serialize(args);
+            a.onload=a.onerror=function(){a.onload=null;a.onerror=null;body.parentNode.removeChild(a);onl&&onl()}
             body.parentNode.appendChild(a);
         }
         , _hnc = function(cmd){

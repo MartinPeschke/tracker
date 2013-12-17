@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b46cdbbb-72d4-46b6-93e3-3b8c18b87ff1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/fb.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/index.html" afterPath="$PROJECT_DIR$/static/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/tracker.js" afterPath="$PROJECT_DIR$/static/tracker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tracker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,10 +35,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fb.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="fb.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/libs/fb.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="77" selection-start="705" selection-end="705" vertical-scroll-proportion="0.0" vertical-offset="94" max-vertical-offset="754">
+            <state line="17" column="18" selection-start="506" selection-end="506" vertical-scroll-proportion="0.33034378" vertical-offset="0" max-vertical-offset="754">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tracker.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/tracker.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="112" selection-start="2421" selection-end="2421" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="962">
               <folding />
             </state>
           </provider>
@@ -57,20 +62,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="36" selection-start="697" selection-end="697" vertical-scroll-proportion="0.6561514" vertical-offset="39" max-vertical-offset="2483">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tracker.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/tracker.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="61" selection-start="2625" selection-end="2637" vertical-scroll-proportion="0.0" vertical-offset="256" max-vertical-offset="949">
-              <folding />
+            <state line="258" column="98" selection-start="8335" selection-end="8335" vertical-scroll-proportion="-4.861111" vertical-offset="3004" max-vertical-offset="3718">
+              <folding>
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1387285284313" expanded="true" signature="7393:8408" placeholder="{...}" />
+                <marker date="1387285284313" expanded="true" signature="7428:8391" placeholder="{...}" />
+                <marker date="1387285284313" expanded="true" signature="8126:8375" placeholder="{...}" />
+                <marker date="1387285284313" expanded="true" signature="8176:8356" placeholder="{...}" />
+                <marker date="1387285284313" expanded="true" signature="8235:8334" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,8 +98,8 @@
       <list>
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/libs/fb.js" />
-        <option value="$PROJECT_DIR$/static/tracker.js" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/static/tracker.js" />
         <option value="$PROJECT_DIR$/static/index.html" />
       </list>
     </option>
@@ -161,6 +164,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -181,6 +198,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -371,10 +389,11 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6448032" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973376" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.24920128" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="-537" y="-4" width="468" height="991" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31180626" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2986882" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -382,7 +401,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -437,7 +455,14 @@
     <entry file="file://$PROJECT_DIR$/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="13" selection-start="750" selection-end="755" vertical-scroll-proportion="0.0" vertical-offset="455" max-vertical-offset="923">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1387285284313" expanded="true" signature="7393:8408" placeholder="{...}" />
+            <marker date="1387285284313" expanded="true" signature="7428:8391" placeholder="{...}" />
+            <marker date="1387285284313" expanded="true" signature="8126:8375" placeholder="{...}" />
+            <marker date="1387285284313" expanded="true" signature="8176:8356" placeholder="{...}" />
+            <marker date="1387285284313" expanded="true" signature="8235:8334" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -458,7 +483,14 @@
     <entry file="file://$PROJECT_DIR$/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="897">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1387285284313" expanded="true" signature="7393:8408" placeholder="{...}" />
+            <marker date="1387285284313" expanded="true" signature="7428:8391" placeholder="{...}" />
+            <marker date="1387285284313" expanded="true" signature="8126:8375" placeholder="{...}" />
+            <marker date="1387285284313" expanded="true" signature="8176:8356" placeholder="{...}" />
+            <marker date="1387285284313" expanded="true" signature="8235:8334" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -479,7 +511,14 @@
     <entry file="file://$PROJECT_DIR$/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="87" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.0" vertical-offset="546" max-vertical-offset="897">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1387285284313" expanded="true" signature="7393:8408" placeholder="{...}" />
+            <marker date="1387285284313" expanded="true" signature="7428:8391" placeholder="{...}" />
+            <marker date="1387285284313" expanded="true" signature="8126:8375" placeholder="{...}" />
+            <marker date="1387285284313" expanded="true" signature="8176:8356" placeholder="{...}" />
+            <marker date="1387285284313" expanded="true" signature="8235:8334" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -511,30 +550,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="7" selection-start="403" selection-end="403" vertical-scroll-proportion="-9.454545" vertical-offset="0" max-vertical-offset="338">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/nimble/nimble.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="190" column="16" selection-start="5789" selection-end="5793" vertical-scroll-proportion="0.33269963" vertical-offset="2295" max-vertical-offset="3068">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/fb.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="77" selection-start="705" selection-end="705" vertical-scroll-proportion="0.0" vertical-offset="94" max-vertical-offset="754">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/tracker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="61" selection-start="2625" selection-end="2637" vertical-scroll-proportion="0.0" vertical-offset="256" max-vertical-offset="949">
           <folding />
         </state>
       </provider>
@@ -546,9 +564,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="7" selection-start="403" selection-end="403" vertical-scroll-proportion="-9.454545" vertical-offset="0" max-vertical-offset="338">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/tracker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="112" selection-start="2421" selection-end="2421" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="962">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="36" selection-start="697" selection-end="697" vertical-scroll-proportion="0.6561514" vertical-offset="39" max-vertical-offset="2483">
+        <state line="258" column="98" selection-start="8335" selection-end="8335" vertical-scroll-proportion="-4.861111" vertical-offset="3004" max-vertical-offset="3718">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1387285284313" expanded="true" signature="7393:8408" placeholder="{...}" />
+            <marker date="1387285284313" expanded="true" signature="7428:8391" placeholder="{...}" />
+            <marker date="1387285284313" expanded="true" signature="8126:8375" placeholder="{...}" />
+            <marker date="1387285284313" expanded="true" signature="8176:8356" placeholder="{...}" />
+            <marker date="1387285284313" expanded="true" signature="8235:8334" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/fb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="18" selection-start="506" selection-end="506" vertical-scroll-proportion="0.33034378" vertical-offset="0" max-vertical-offset="754">
           <folding />
         </state>
       </provider>
