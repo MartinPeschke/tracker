@@ -14,8 +14,7 @@
   },
   "dependencies": {
        "azure" :"~0.7",
-       "nimble":"~0.0.2",
-       "underscore":"~1.5.2"
+       "nimble":"~0.0.2"
   },
   "devDependencies": {}
 }

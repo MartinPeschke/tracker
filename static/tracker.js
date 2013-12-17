@@ -17,7 +17,6 @@ var monster={set:function(a,b,c,d,e){var f=new Date,g="",h=typeof b,i="",j="";if
         return uuid;
     };
 
-
     var hncCN = '_hnc_c'
         , domain
         , siteId
@@ -35,7 +34,7 @@ var monster={set:function(a,b,c,d,e){var f=new Date,g="",h=typeof b,i="",j="";if
         , pixel = function(args){
             args.siteId = siteId;
             args.domain = domain;
-            args.user = cooks;
+            args.user = args.user||cooks;
             args.url=window.location.href;
 
             var body = document.getElementsByTagName('body')[0]
@@ -64,4 +63,5 @@ var monster={set:function(a,b,c,d,e){var f=new Date,g="",h=typeof b,i="",j="";if
             _hnc.apply(window, preQ[i])
         }
         window[HNCWebTrckrObject] = _hnc;
+        _hnc.pixel = pixel;
 }(window));
