@@ -41,9 +41,8 @@ var monster={set:function(a,b,c,d,e){var f=new Date,g="",h=typeof b,i="",j="";if
                 , a = document.createElement("img");
             a.async=1;
             a.style.display='none';
+            a.onload=a.onerror=function(){a.onload=null;a.onerror=null;onl&&onl();}
             a.src="/t?"+serialize(args);
-            a.onload=a.onerror=function(){a.onload=null;a.onerror=null;body.parentNode.removeChild(a);onl&&onl()}
-            body.parentNode.appendChild(a);
         }
         , _hnc = function(cmd){
             if(cmd==='create'){
