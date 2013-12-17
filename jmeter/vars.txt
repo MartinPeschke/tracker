@@ -1,0 +1,8 @@
+signup
+login
+buy
+vote
+comment
+review
+like
+pin
