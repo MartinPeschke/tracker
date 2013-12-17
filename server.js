@@ -39,7 +39,7 @@ var extend = function(obj, sources) {
 
                 if(query.cmd=='event'){
                     var eventKey = query.args[0]
-                        , msg = JSON.stringify({'EventKey':eventKey, 'SiteToken': query.siteId, 'UserToken': query.user, 'Url':query.url, ts:new Date().getTime()});
+                        , msg = JSON.stringify({'EventKey':eventKey.toUpperCase(), 'SiteToken': query.siteId, 'UserToken': query.user, 'Url':query.url, ts:new Date().getTime()});
 
                     queueService.createMessage(eventQueueName, msg, function(err){});
 
