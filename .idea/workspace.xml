@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b46cdbbb-72d4-46b6-93e3-3b8c18b87ff1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/tracker.js" afterPath="$PROJECT_DIR$/static/tracker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/index.html" afterPath="$PROJECT_DIR$/static/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
     </list>
     <ignored path="tracker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="server.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="81" selection-start="1364" selection-end="1364" vertical-scroll-proportion="0.0" vertical-offset="332" max-vertical-offset="1157">
+            <state line="39" column="39" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.32642487" vertical-offset="192" max-vertical-offset="1170">
               <folding />
             </state>
           </provider>
@@ -37,16 +38,16 @@
       <file leaf-file-name="fb.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libs/fb.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="7" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="754">
+            <state line="14" column="7" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="754">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tracker.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="tracker.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/tracker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="83" selection-start="2351" selection-end="2351" vertical-scroll-proportion="0.4054878" vertical-offset="293" max-vertical-offset="949">
+            <state line="43" column="79" selection-start="2344" selection-end="2347" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="949">
               <folding />
             </state>
           </provider>
@@ -64,7 +65,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="251" column="23" selection-start="8008" selection-end="8008" vertical-scroll-proportion="-5.9027777" vertical-offset="2838" max-vertical-offset="3731">
+            <state line="20" column="26" selection-start="380" selection-end="380" vertical-scroll-proportion="-3.6111112" vertical-offset="0" max-vertical-offset="3731">
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -92,9 +93,9 @@
       <list>
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/libs/fb.js" />
+        <option value="$PROJECT_DIR$/static/tracker.js" />
         <option value="$PROJECT_DIR$/static/index.html" />
         <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/static/tracker.js" />
       </list>
     </option>
   </component>
@@ -407,8 +408,8 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6448032" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.24920128" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="-537" y="-4" width="468" height="991" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2986882" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.24920128" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="-537" y="-4" width="468" height="991" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2986882" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -557,20 +558,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="7" selection-start="403" selection-end="403" vertical-scroll-proportion="-9.454545" vertical-offset="0" max-vertical-offset="338">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/fb.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="7" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="754">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/azure/lib/services/queue/models/queuemessageresult.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="22" selection-start="1267" selection-end="1277" vertical-scroll-proportion="0.6196891" vertical-offset="0" max-vertical-offset="1196">
@@ -585,25 +572,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
+    <entry file="file://$PROJECT_DIR$/libs/fb.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="81" selection-start="1364" selection-end="1364" vertical-scroll-proportion="0.0" vertical-offset="332" max-vertical-offset="1157">
+        <state line="14" column="7" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="754">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="7" selection-start="403" selection-end="403" vertical-scroll-proportion="-9.454545" vertical-offset="0" max-vertical-offset="338">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/tracker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="79" selection-start="2344" selection-end="2347" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="949">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="251" column="23" selection-start="8008" selection-end="8008" vertical-scroll-proportion="-5.9027777" vertical-offset="2838" max-vertical-offset="3731">
+        <state line="20" column="26" selection-start="380" selection-end="380" vertical-scroll-proportion="-3.6111112" vertical-offset="0" max-vertical-offset="3731">
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/tracker.js">
+    <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="83" selection-start="2351" selection-end="2351" vertical-scroll-proportion="0.4054878" vertical-offset="293" max-vertical-offset="949">
+        <state line="39" column="39" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.32642487" vertical-offset="192" max-vertical-offset="1170">
           <folding />
         </state>
       </provider>

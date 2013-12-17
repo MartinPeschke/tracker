@@ -37,6 +37,7 @@ var extend = function(obj, sources) {
 
                 if(query.args)query.args = query.args.split("-|-");
 
+                if(!query.cmd){return;}
                 if(query.cmd=='event'){
                     var eventKey = query.args[0]
                         , msg = JSON.stringify({'EventKey':eventKey.toUpperCase(), 'SiteToken': query.siteId, 'UserToken': query.user, 'Url':query.url, ts:new Date().getTime()});
@@ -73,8 +74,8 @@ queueService.createQueueIfNotExists(eventQueueName, function(error){
     if(!error){
         queueService.createQueueIfNotExists(fbQueueName, function(error){
             if(!error){
-                fs.readFile('./static/tracker.js', 'utf8', function (err, tracker_file) {
-                    fs.readFile('./static/b.gif', 'ascii', function (err, pixel) {
+                fs.readFile('./static/tracker.js', 'utf8', function (error, tracker_file) {
+                    fs.readFile('./static/b.gif', 'ascii', function (error, pixel) {
                         start_server(tracker_file, pixel, queueService);
                     });
                 });
