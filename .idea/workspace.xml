@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b46cdbbb-72d4-46b6-93e3-3b8c18b87ff1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/casper.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/casper/test_user_like.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/casper/test_user_setup.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/fb.js" afterPath="$PROJECT_DIR$/libs/fb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tracker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,26 +32,7 @@
     <favorites_list name="tracker" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="49" selection-start="2095" selection-end="2095" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1196">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fb.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/libs/fb.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="48" selection-start="830" selection-end="830" vertical-scroll-proportion="0.2969543" vertical-offset="195" max-vertical-offset="884">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -69,6 +55,9 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/libs/fb.js" />
+        <option value="$PROJECT_DIR$/casper.bat" />
+        <option value="$PROJECT_DIR$/casper/test_user_like.js" />
+        <option value="$PROJECT_DIR$/casper/test_user_setup.js" />
       </list>
     </option>
   </component>
@@ -180,7 +169,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
+              <option name="myItemId" value="casper" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -429,7 +418,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -437,8 +426,8 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6438214" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.24920128" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="-537" y="0" width="468" height="1064" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.51194185" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.24920128" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="-537" y="0" width="468" height="1064" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51194185" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33055267" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -492,27 +481,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="897">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/tracker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="36" selection-start="1548" selection-end="1548" vertical-scroll-proportion="0.0" vertical-offset="299" max-vertical-offset="949">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="39" selection-start="741" selection-end="741" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="559">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/index.html">
-      <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="87" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.0" vertical-offset="546" max-vertical-offset="897">
           <folding />
         </state>
@@ -555,20 +523,6 @@
         <state line="482" column="69" selection-start="23381" selection-end="23392" vertical-scroll-proportion="0.46953782" vertical-offset="5637" max-vertical-offset="9620" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/tracker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="27" selection-start="1719" selection-end="1719" vertical-scroll-proportion="0.18454258" vertical-offset="234" max-vertical-offset="949">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="26" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0" vertical-offset="260" max-vertical-offset="3731">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="23" selection-start="395" selection-end="395" vertical-scroll-proportion="0.31050956" vertical-offset="0" max-vertical-offset="628">
@@ -576,16 +530,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
+    <entry file="file://$PROJECT_DIR$/static/tracker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="49" selection-start="2095" selection-end="2095" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1196">
+        <state line="27" column="27" selection-start="1719" selection-end="1719" vertical-scroll-proportion="0.35281384" vertical-offset="25" max-vertical-offset="949">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/casper/test_user_setup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="0" selection-start="7632" selection-end="7632" vertical-scroll-proportion="0.8512586" vertical-offset="686" max-vertical-offset="1911">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/libs/fb.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="48" selection-start="830" selection-end="830" vertical-scroll-proportion="0.2969543" vertical-offset="195" max-vertical-offset="884">
+        <state line="15" column="5" selection-start="769" selection-end="769" vertical-scroll-proportion="0.20811099" vertical-offset="0" max-vertical-offset="975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="44" selection-start="2981" selection-end="2985" vertical-scroll-proportion="0.23278688" vertical-offset="1295" max-vertical-offset="3731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="30" selection-start="1849" selection-end="1859" vertical-scroll-proportion="0.6937033" vertical-offset="0" max-vertical-offset="1170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/casper/test_user_like.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="498" selection-end="498" vertical-scroll-proportion="0.23585913" vertical-offset="0" max-vertical-offset="937">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/casper.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="0" selection-end="133" vertical-scroll-proportion="0.027748132" vertical-offset="0" max-vertical-offset="937">
           <folding />
         </state>
       </provider>

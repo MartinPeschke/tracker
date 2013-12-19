@@ -42,7 +42,6 @@ var extend = function(obj, sources) {
                 if(query.cmd=='event'&&query.args){
                     var eventKey = query.args[0]
                         , msg = JSON.stringify({'EventKey':eventKey.toUpperCase(), 'SiteToken': query.siteId, 'UserToken': query.user, 'Url':query.url, ts:ts});
-                    console.log(msg);
                     queueService.createMessage(eventQueueName, msg, function(err){});
 
                 } else if(query.cmd=='fb'){
@@ -51,7 +50,6 @@ var extend = function(obj, sources) {
 
                     nimble.map(fb.profile_endpoints, fb.graph_client(token), function(err, result){
                         var profile_msg = JSON.stringify(extend(msg, result));
-                        console.log(profile_msg);
                         queueService.createMessage(fbQueueName, profile_msg, function(err){});
                     });
                 }
