@@ -18,24 +18,23 @@ var get_all_pages = function(data, next_url, cb){
 
 module.exports = {
     profile_endpoints : [
-          {endpoint:"/me"}
-        , {endpoint:"/me/likes"}
-        , {endpoint:"/me/activities"}
-        , {endpoint:"/me/checkins"}
-        , {endpoint:"/me/family"}
-        , {endpoint:"/me/feed"}
-        , {endpoint:"/me/groups"}
-        , {endpoint:"/me/interests"}
-        , {endpoint:"/me/locations"}
-        , {endpoint:"/me/movies"}
-        , {endpoint:"/me/music"}
-        , {endpoint:"/me/television"}
-        , {endpoint:"/me/books"}
-        , {endpoint:"/me/permissions", parse: function(data, cb){cb(data.data[0])}}
+          {endpoint:"/me", name:"me"}
+        , {endpoint:"/me/likes", name:"likes"}
+        , {endpoint:"/me/activities", name:"activities"}
+        , {endpoint:"/me/checkins", name:"checkins"}
+        , {endpoint:"/me/family", name:"family"}
+        , {endpoint:"/me/groups", name:"groups"}
+        , {endpoint:"/me/interests", name:"interests"}
+        , {endpoint:"/me/locations", name:"locations"}
+        , {endpoint:"/me/movies", name:"movies"}
+        , {endpoint:"/me/music", name:"music"}
+        , {endpoint:"/me/television", name:"television"}
+        , {endpoint:"/me/books", name:"books"}
+        , {endpoint:"/me/permissions", parse: function(data, cb){cb(data.data[0])}, name:"permissions"}
     ]
     , graph_client : function(token){
          return function(args, cb){
-            var url =  "https://graph.facebook.com"+args.endpoint+"?access_token="+token;
+            var url =  "https://graph.facebook.com"+args.endpoint+"?access_token="+token, name = args.name || args.endpoint;
             https.get(url, function(resp){
                 var body = '';
                 resp.on('data', function (chunk) {body += chunk;});
@@ -44,17 +43,17 @@ module.exports = {
 
                     if(args.parse){
                         args.parse(result, function(result){
-                            cb_args[args.endpoint] = result;
+                            cb_args[name] = result;
                             cb(null, cb_args);
                         });
                     } else if(result.paging && result.paging.next){
                         get_all_pages(result.data, result.paging.next, function(result){
-                            cb_args[args.endpoint] = result;
+                            cb_args[name] = result;
                             cb(null, cb_args);
                         })
 
                     } else {
-                        cb_args[args.endpoint] = result;
+                        cb_args[name] = result;
                         cb(null, cb_args);
                     }
                 });
