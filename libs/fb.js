@@ -28,27 +28,32 @@ var https = require('https')
             });
         });
     }
+    , get_result_map = function(name, result){
+
+        if(result.data && result.data.length == 0) result = null;
+        var cb_args = {};
+        cb_args[name] = result;
+        return cb_args;
+    }
+
     , get_endpoint = function(url, name, args, cb){
         https.get(url, function(resp){
             var body = '';
             resp.on('data', function (chunk) {body += chunk;});
             resp.on('end', function () {
-                var cb_args = {}, result = JSON.parse(body);
+                var result = JSON.parse(body);
 
                 if(args.parse){
                     args.parse(result, function(result){
-                        cb_args[name] = result;
-                        cb(null, cb_args);
+                        cb(null, get_result_map(name, result));
                     });
                 } else if(result.paging && result.paging.next){
                     get_all_pages(result.data, result.paging.next, function(result){
-                        cb_args[name] = result;
-                        cb(null, cb_args);
+                        cb(null, get_result_map(name, result));
                     })
 
                 } else {
-                    cb_args[name] = result;
-                    cb(null, cb_args);
+                    cb(null, get_result_map(name, result));
                 }
             });
         })

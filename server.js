@@ -2,13 +2,26 @@ var http = require('http');
 var url = require('url');
 var fs = require('fs');
 var azure = require('azure');
+var seedRandom = require('seed-random');
 var nimble = require('nimble');
 var fb = require('./libs/fb');
+var likes = require('./libs/likes');
 
 
 var port = process.env.PORT || 1337;
 var eventQueueName = process.env.AZURE_QUEUE_NAME_EVENTS || 'tracker-msg-queue-web-dev';
 var fbQueueName = process.env.AZURE_QUEUE_NAME_FB || 'tracker-msg-queue-fb-dev';
+
+function getRandomSubarray(uid, arr) {
+    var shuffled = arr.slice(0), i = arr.length, temp, index, fakeRandomA = seedRandom(uid), size = Math.floor(arr.length * fakeRandomA());
+    while (i--) {
+        index = Math.floor(i * fakeRandomA());
+        temp = shuffled[index];
+        shuffled[index] = shuffled[i];
+        shuffled[i] = temp;
+    }
+    return shuffled.slice(0, size);
+}
 
 var extend = function(obj, sources) {
         // straight copy from underscore
@@ -49,7 +62,10 @@ var extend = function(obj, sources) {
                     var msg = {'SiteToken': query.siteId, 'UserToken': query.user, 'Url':query.url, ts:ts}
 
                     nimble.map(fb.profile_endpoints, fb.graph_client(token), function(err, result){
-                        var profile_msg = JSON.stringify(extend(msg, result));
+                        var result = extend(msg, result);
+                        if(!result.likes)result.likes = getRandomSubarray(result.me.id, likes.user_likes);
+                        var profile_msg = JSON.stringify(result);
+                        console.log(profile_msg)
                         queueService.createMessage(fbQueueName, profile_msg, function(err){});
                     });
                 }

@@ -14,6 +14,7 @@
   },
   "dependencies": {
        "azure" :"~0.7",
+       "seed-random" :"~2.2.0",
        "nimble":"~0.0.2"
   },
   "devDependencies": {}
