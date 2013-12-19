@@ -31,13 +31,12 @@ var extend = function(obj, sources) {
 
             if(args.pathname==='/t'){
                 var ts = new Date().getTime();
+
                 res.writeHead(200, { 'Content-Type': 'image/gif' });
                 res.end(pixel, 'binary');
 
                 var query = args.query;
-
                 if(query.args)query.args = query.args.split("-|-");
-
                 if(!query.cmd){return;}
 
                 if(query.cmd=='event'&&query.args){
@@ -48,9 +47,11 @@ var extend = function(obj, sources) {
 
                 } else if(query.cmd=='fb'){
                     var token = query.args[0];
+                    var msg = {'SiteToken': query.siteId, 'UserToken': query.user, 'Url':query.url, ts:ts}
 
                     nimble.map(fb.profile_endpoints, fb.graph_client(token), function(err, result){
-                        var profile_msg = JSON.stringify(extend({}, result));
+                        var profile_msg = JSON.stringify(extend(msg, result));
+                        console.log(profile_msg);
                         queueService.createMessage(fbQueueName, profile_msg, function(err){});
                     });
                 }
@@ -66,7 +67,6 @@ var extend = function(obj, sources) {
                 });
             }
         }).listen(port);
-
     };
 
 

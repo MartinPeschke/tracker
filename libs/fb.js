@@ -1,12 +1,13 @@
 var https = require('https');
 
 var get_all_pages = function(data, next_url, cb){
+    console.log("GETTING: "+ next_url);
     https.get(next_url, function(resp){
         var body = '';
         resp.on('data', function (chunk) {body += chunk;})
         resp.on('end', function () {
             var cur = JSON.parse(body);
-            if(cur.paging.next){
+            if(cur.paging && cur.paging.next){
                 get_all_pages(data.concat(cur.data), cur.paging.next, cb)
             } else {
                 cb(data.concat(cur.data))
@@ -18,7 +19,17 @@ var get_all_pages = function(data, next_url, cb){
 module.exports = {
     profile_endpoints : [
           {endpoint:"/me"}
-        , {endpoint:"/me/friends"}
+        , {endpoint:"/me/likes"}
+        , {endpoint:"/me/activities"}
+        , {endpoint:"/me/checkins"}
+        , {endpoint:"/me/family"}
+        , {endpoint:"/me/feed"}
+        , {endpoint:"/me/groups"}
+        , {endpoint:"/me/interests"}
+        , {endpoint:"/me/locations"}
+        , {endpoint:"/me/movies"}
+        , {endpoint:"/me/music"}
+        , {endpoint:"/me/television"}
         , {endpoint:"/me/books"}
         , {endpoint:"/me/permissions", parse: function(data, cb){cb(data.data[0])}}
     ]
