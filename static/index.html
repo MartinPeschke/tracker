@@ -212,7 +212,8 @@
                       , n = parseInt($form.find(".no-runs").val(), 10)
                       , event = $form.find(".event").val()
                       , users = $(".fb-test-user")
-                      , total = 0;
+                      , total = 0, uuid
+                      , uuids = [];
 
               for (var i = 0; i < n; i++) {
 
@@ -220,7 +221,9 @@
                   users.each(function (idx, user) {
                     var d = $(user).data();
                     total++;
-                    _hnc.pixel({'cmd': 'fb', user: UUID(), args: [d.accessToken, d.entityId].join("-|-")})
+                    uuid = UUID();
+                    uuids.push(uuid);
+                    _hnc.pixel({'cmd': 'fb', user: uuid, args: [d.accessToken, d.entityId].join("-|-")})
                   })
 
                 } else {
@@ -231,6 +234,7 @@
                   })
                 }
               }
+              document.write(uuids);
               e.preventDefault();
               e.stopPropagation();
               return false;
