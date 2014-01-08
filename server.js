@@ -82,6 +82,8 @@ var extend = function(obj, sources) {
                 profiles.forEach(function(profile_msg){
                     queueService.createMessage(fbQueueName, profile_msg, function(err){});
                     console.log(profile_msg);
+                    res.writeHead(200, { 'Content-Type': 'text/html' });
+                    res.end("Well Done!");
                 })
             } else {
                 fs.readFile('./static/index.html', 'utf8', function (err, index_html) {
