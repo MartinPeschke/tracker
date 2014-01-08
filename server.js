@@ -99,7 +99,7 @@ var queueService = azure.createQueueService();
 var input = fs.createReadStream('jmeter/profiles.txt');
 var profile_jsons = [];
 files.readLines(input, function(line){
-    profile_jsons.push(line.split("|-\t-|")[1]);
+    profile_jsons.push(line.split(";")[1]);
 }, function(){
 
     queueService.createQueueIfNotExists(eventQueueName, function(error){
