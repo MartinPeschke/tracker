@@ -12,7 +12,7 @@ var https = require('https')
         , {endpoint:"/me/music", name:"music"}
         , {endpoint:"/me/television", name:"television"}
         , {endpoint:"/me/books", name:"books"}
-        , {endpoint:"/me/permissions", parse: function(data, cb){cb(data.data[0])}, name:"permissions"}
+        , {endpoint:"/me/permissions", parse: function(data, cb){cb(data.data&&data.data[0]||{})}, name:"permissions"}
     ]
     , get_all_pages = function(data, next_url, cb){
         https.get(next_url, function(resp){

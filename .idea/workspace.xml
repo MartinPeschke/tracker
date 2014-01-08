@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b46cdbbb-72d4-46b6-93e3-3b8c18b87ff1" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\_projects\tracker\.gitignore" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/files.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/casper/test_user_setup_education.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/fb.js" afterPath="$PROJECT_DIR$/libs/fb.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/index.html" afterPath="$PROJECT_DIR$/static/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/likes.js" afterPath="$PROJECT_DIR$/libs/likes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tracker.iws" />
@@ -30,19 +34,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="server.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="24" selection-start="3260" selection-end="3260" vertical-scroll-proportion="0.0" vertical-offset="934" max-vertical-offset="1378">
+            <state line="83" column="45" selection-start="3576" selection-end="3576" vertical-scroll-proportion="0.63380283" vertical-offset="809" max-vertical-offset="1638">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file leaf-file-name="files.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libs/files.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="3" selection-start="456" selection-end="456" vertical-scroll-proportion="-10.636364" vertical-offset="0" max-vertical-offset="351">
+            <state line="22" column="0" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="377">
               <folding />
             </state>
           </provider>
@@ -51,16 +55,43 @@
       <file leaf-file-name="fb.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libs/fb.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="10" selection-start="2742" selection-end="2742" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1040">
+            <state line="11" column="35" selection-start="544" selection-end="544" vertical-scroll-proportion="0.0" vertical-offset="4" max-vertical-offset="1040">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="likes.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libs/likes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="13" selection-start="8" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="4914" max-vertical-offset="17511">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tracker.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/tracker.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="10" selection-start="2555" selection-end="2555" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="949">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="256" column="45" selection-start="8341" selection-end="8341" vertical-scroll-proportion="0.5158817" vertical-offset="2857" max-vertical-offset="3783">
+            <state line="235" column="40" selection-start="7404" selection-end="7404" vertical-scroll-proportion="-8.409091" vertical-offset="2870" max-vertical-offset="3822">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_user_setup.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/casper/test_user_setup.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="12" selection-start="4229" selection-end="4260" vertical-scroll-proportion="0.0" vertical-offset="362" max-vertical-offset="1911">
               <folding />
             </state>
           </provider>
@@ -88,13 +119,15 @@
         <option value="$PROJECT_DIR$/casper.bat" />
         <option value="$PROJECT_DIR$/casper/test_user_like.js" />
         <option value="$PROJECT_DIR$/casper/test_user_setup.js" />
-        <option value="$PROJECT_DIR$/libs/likes.js" />
         <option value="$PROJECT_DIR$/libs/ransomseed.js" />
         <option value="$PROJECT_DIR$/libs/randomseed.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/libs/fb.js" />
         <option value="$PROJECT_DIR$/static/index.html" />
+        <option value="$PROJECT_DIR$/casper/test_user_setup_education.js" />
+        <option value="$PROJECT_DIR$/libs/likes.js" />
+        <option value="$PROJECT_DIR$/libs/fb.js" />
+        <option value="$PROJECT_DIR$/libs/files.js" />
+        <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
   </component>
@@ -232,15 +265,15 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="preferences.keymap" />
-    <property name="restartRequiresConfirmation" value="true" />
+    <property name="recentsLimit" value="5" />
+    <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../trackerui" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -332,9 +365,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -356,6 +386,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
@@ -405,8 +438,8 @@
     <configuration default="false" name="NodeTracker" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
       <envs>
         <env name="AZURE_QUEUE_NAME_EVENTS" value="test-queue" />
-        <env name="AZURE_STORAGE_ACCOUNT" value="booksys" />
         <env name="PORT" value="80" />
+        <env name="AZURE_STORAGE_ACCOUNT" value="booksys" />
         <env name="AZURE_QUEUE_NAME_FB" value="test-queue-fb" />
         <env name="AZURE_STORAGE_ACCESS_KEY" value="BS323SGwtVqgJF+mx3JGpWF81e4rGqt7CHUEJoeu4SsBtO+S+lm9tmx1E6qG68VQ6WFhSPliPMs7ji4QMaTjEQ==" />
       </envs>
@@ -476,8 +509,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298647" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.24920128" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="-537" y="0" width="468" height="1064" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5109261" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.24920128" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="-636" y="0" width="468" height="1064" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5296566" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33055267" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -506,9 +539,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -530,23 +563,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="12" selection-start="917" selection-end="917" vertical-scroll-proportion="0.0" vertical-offset="2320" max-vertical-offset="3731">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="2" selection-start="846" selection-end="846" vertical-scroll-proportion="0.31917098" vertical-offset="355" max-vertical-offset="2483" />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="17" selection-start="945" selection-end="945" vertical-scroll-proportion="0.3326425" vertical-offset="290" max-vertical-offset="49569" />
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="82" column="17" selection-start="1187" selection-end="1187" vertical-scroll-proportion="0.3326425" vertical-offset="745" max-vertical-offset="12181" />
@@ -567,18 +583,6 @@
         <state line="482" column="69" selection-start="23381" selection-end="23392" vertical-scroll-proportion="0.46953782" vertical-offset="5637" max-vertical-offset="9620" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/tracker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="27" selection-start="1719" selection-end="1719" vertical-scroll-proportion="0.35281384" vertical-offset="25" max-vertical-offset="949">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/casper/test_user_setup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="0" selection-start="7632" selection-end="7632" vertical-scroll-proportion="0.8512586" vertical-offset="686" max-vertical-offset="1911" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/casper/test_user_like.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="498" selection-end="498" vertical-scroll-proportion="0.23585913" vertical-offset="0" max-vertical-offset="937" />
@@ -589,37 +593,70 @@
         <state line="2" column="0" selection-start="0" selection-end="133" vertical-scroll-proportion="0.027748132" vertical-offset="0" max-vertical-offset="937" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="24" selection-start="3260" selection-end="3260" vertical-scroll-proportion="0.0" vertical-offset="934" max-vertical-offset="1378">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/likes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="33" selection-start="160" selection-end="160" vertical-scroll-proportion="-6.2905407" vertical-offset="2871" max-vertical-offset="5733">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="3" selection-start="456" selection-end="456" vertical-scroll-proportion="-10.636364" vertical-offset="0" max-vertical-offset="351">
+        <state line="18" column="3" selection-start="456" selection-end="456" vertical-scroll-proportion="0.55450237" vertical-offset="0" max-vertical-offset="422" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/casperjs/modules/casper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2192" column="94" selection-start="73140" selection-end="73147" vertical-scroll-proportion="0.33262032" vertical-offset="27821" max-vertical-offset="33228">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/fb.js">
+    <entry file="file://$PROJECT_DIR$/casper/test_user_setup_education.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="10" selection-start="2742" selection-end="2742" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1040">
+        <state line="32" column="0" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.4449198" vertical-offset="0" max-vertical-offset="1430">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/casper/test_user_setup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="12" selection-start="4229" selection-end="4260" vertical-scroll-proportion="0.0" vertical-offset="206" max-vertical-offset="1911">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="256" column="45" selection-start="8341" selection-end="8341" vertical-scroll-proportion="0.5158817" vertical-offset="2857" max-vertical-offset="3783">
+        <state line="235" column="40" selection-start="7404" selection-end="7404" vertical-scroll-proportion="-8.409091" vertical-offset="2870" max-vertical-offset="3822">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/tracker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="10" selection-start="2555" selection-end="2555" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="949">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/likes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="13" selection-start="8" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="17511">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/fb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="35" selection-start="544" selection-end="544" vertical-scroll-proportion="0.0" vertical-offset="4" max-vertical-offset="1040">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/files.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="377">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="45" selection-start="3576" selection-end="3576" vertical-scroll-proportion="0.63380283" vertical-offset="809" max-vertical-offset="1638">
           <folding />
         </state>
       </provider>

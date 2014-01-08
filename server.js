@@ -6,6 +6,7 @@ var seedRandom = require('seed-random');
 var nimble = require('nimble');
 var fb = require('./libs/fb');
 var likes = require('./libs/likes');
+var files = require('./libs/files');
 
 
 var port = process.env.PORT || 1337;
@@ -35,7 +36,7 @@ var extend = function(obj, sources) {
         return obj;
     }
 
-    , start_server = function(tracker_file, pixel, queueService){
+    , start_server = function(tracker_file, pixel, profiles, queueService){
 
         http.createServer(function(req, res) {
             var args = url.parse(req.url, true);
@@ -64,8 +65,11 @@ var extend = function(obj, sources) {
                     nimble.map(fb.profile_endpoints, fb.graph_client(token), function(err, result){
                         var result = extend(msg, result);
                         if(!result.likes)result.likes = getRandomSubarray(result.me.id, likes.user_likes);
+                        if(!result.movies)result.movies = getRandomSubarray(result.me.id, likes.movies);
+                        if(!result.books)result.books = getRandomSubarray(result.me.id, likes.books);
+                        if(!result.music)result.music = getRandomSubarray(result.me.id, likes.music);
                         var profile_msg = JSON.stringify(result);
-                        console.log(profile_msg)
+                        console.log(profile_msg);
                         queueService.createMessage(fbQueueName, profile_msg, function(err){});
                     });
                 }
@@ -74,6 +78,11 @@ var extend = function(obj, sources) {
               res.writeHead(200, { 'Content-Type': 'application/javascript' });
               res.end(tracker_file);
 
+            } else if(args.pathname==='/TEST'){
+                profiles.forEach(function(profile_msg){
+                    queueService.createMessage(fbQueueName, profile_msg, function(err){});
+                    console.log(profile_msg);
+                })
             } else {
                 fs.readFile('./static/index.html', 'utf8', function (err, index_html) {
                     res.writeHead(200, { 'Content-Type': 'text/html' });
@@ -86,16 +95,26 @@ var extend = function(obj, sources) {
 
 var queueService = azure.createQueueService();
 
-queueService.createQueueIfNotExists(eventQueueName, function(error){
-    if(!error){
-        queueService.createQueueIfNotExists(fbQueueName, function(error){
-            if(!error){
-                fs.readFile('./static/tracker.js', 'utf8', function (error, tracker_file) {
-                    fs.readFile('./static/b.gif', 'ascii', function (error, pixel) {
-                        start_server(tracker_file, pixel, queueService);
+
+var input = fs.createReadStream('jmeter/profiles.txt');
+var profile_jsons = [];
+files.readLines(input, function(line){
+    profile_jsons.push(line.split("|-\t-|")[1]);
+}, function(){
+
+    queueService.createQueueIfNotExists(eventQueueName, function(error){
+        if(!error){
+            queueService.createQueueIfNotExists(fbQueueName, function(error){
+                if(!error){
+                    fs.readFile('./static/tracker.js', 'utf8', function (error, tracker_file) {
+                        fs.readFile('./static/b.gif', 'ascii', function (error, pixel) {
+                            start_server(tracker_file, pixel, profile_jsons, queueService);
+                        });
                     });
-                });
-            }
-        });
+                }
+            });
+        }
+    });
+
     }
-});
+);
