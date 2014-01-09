@@ -1,6 +1,6 @@
 var seedRandom = require('seed-random');
 
-exports.getRandomSubarray = function (uid, arr) {
+exports.getRandomSubarray = function (uid, arr, n) {
     var shuffled = arr.slice(0), i = arr.length, temp, index, fakeRandomA = seedRandom(uid), size = Math.floor(arr.length * fakeRandomA());
     while (i--) {
         index = Math.floor(i * fakeRandomA());
@@ -8,7 +8,7 @@ exports.getRandomSubarray = function (uid, arr) {
         shuffled[index] = shuffled[i];
         shuffled[i] = temp;
     }
-    return shuffled.slice(0, size);
+    return shuffled.slice(0, n==null?size:n);
 };
 exports.keys = Object.keys || function (obj) {
     var results = [];

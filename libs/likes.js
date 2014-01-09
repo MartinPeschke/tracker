@@ -1,3 +1,226 @@
+exports.education = [
+            {
+                "school": {
+                    "id": "108285525866934",
+                    "name": "Leighton Park School"
+                },
+                "type": "High School"
+            },
+            {
+                "school": {
+                    "id": "105508986148312",
+                    "name": "Reading Memorial High School"
+                },
+                "type": "High School"
+            },
+            {
+                "school": {
+                    "id": "102483296481221",
+                    "name": "UHAnimation"
+                },
+                "type": "High School"
+            },
+            {
+                "school": {
+                    "id": "80018237219",
+                    "name": "Red Lobster"
+                },
+                "type": "High School"
+            },
+            {
+                "school": {
+                    "id": "106083502756025",
+                    "name": "Reading High School"
+                },
+                "type": "High School"
+            },
+            {
+                "school": {
+                    "id": "170244089707558",
+                    "name": "Rfa"
+                },
+                "type": "High School"
+            },
+            {
+                "school": {
+                    "id": "103772729662018",
+                    "name": "Jurupa Valley High School"
+                },
+                "type": "High School"
+            },
+            {
+                "school": {
+                    "id": "411964369224",
+                    "name": "EWS Wien"
+                },
+                "type": "High School"
+            },
+            {
+                "school": {
+                    "id": "176898079059578",
+                    "name": "CFP Maurice-Barbeau"
+                },
+                "type": "High School"
+            },
+            {
+                "school": {
+                    "id": "59576596173",
+                    "name": "Recording Workshop"
+                },
+                "type": "High School"
+            },
+            {
+                "school": {
+                    "id": "108008229226673",
+                    "name": "Reno High School"
+                },
+                "type": "High School"
+            },
+            {
+                "school": {
+                    "id": "132592508832",
+                    "name": "University of Regina"
+                },
+                "type": "High School"
+            },
+            {
+                "school": {
+                    "id": "109657412385682",
+                    "name": "Humble High School"
+                },
+                "year": {
+                    "id": "144044875610606",
+                    "name": "2011"
+                },
+                "type": "High School"
+            },
+            {
+                "school": {
+                    "id": "181876971836215",
+                    "name": "San Francisco Art Institute"
+                },
+                "type": "High School"
+            },
+            {
+                "school": {
+                    "id": "133097766710680",
+                    "name": "Empire Beauty School at Reading"
+                },
+                "type": "College"
+            },
+            {
+                "school": {
+                    "id": "107750532581518",
+                    "name": "University of Reading"
+                },
+                "type": "College"
+            },
+            {
+                "school": {
+                    "id": "103746572998084",
+                    "name": "University of Northern Colorado"
+                },
+                "type": "College"
+            },
+            {
+                "school": {
+                    "id": "327350827327786",
+                    "name": "University of Huelva"
+                },
+                "type": "College"
+            },
+            {
+                "school": {
+                    "id": "226934770678193",
+                    "name": "Detén el abuso!"
+                },
+                "type": "College"
+            },
+            {
+                "school": {
+                    "id": "151157061731",
+                    "name": "WQXR"
+                },
+                "year": {
+                    "id": "141778012509913",
+                    "name": "2008"
+                },
+                "type": "College"
+            },
+            {
+                "school": {
+                    "id": "103115559728895",
+                    "name": "University of Iceland"
+                },
+                "type": "College"
+            },
+            {
+                "school": {
+                    "id": "7031523262",
+                    "name": "ESADE"
+                },
+                "type": "College"
+            },
+            {
+                "school": {
+                    "id": "122581057764508",
+                    "name": "The University of Edinburgh"
+                },
+                "type": "College"
+            },
+            {
+                "school": {
+                    "id": "191299800891441",
+                    "name": "EM Normandie"
+                },
+                "type": "College"
+            },
+            {
+                "school": {
+                    "id": "103110043062715",
+                    "name": "University of Düsseldorf"
+                },
+                "type": "College"
+            },
+            {
+                "school": {
+                    "id": "25545934041",
+                    "name": "Georgia Southern University"
+                },
+                "degree": {
+                    "id": "109136949164575",
+                    "name": "Bachelors"
+                },
+                "type": "Graduate School"
+            },
+            {
+                "school": {
+                    "id": "90558947243",
+                    "name": "DeVry University"
+                },
+                "degree": {
+                    "id": "185293698172703",
+                    "name": "MA"
+                },
+                "type": "Graduate School"
+            },
+            {
+                "school": {
+                    "id": "123787251028240",
+                    "name": "TU Dresden"
+                },
+                "degree": {
+                    "id": "170434169669210",
+                    "name": "PhD"
+                },
+                "year": {
+                    "id": "120960561375312",
+                    "name": "2013"
+                },
+                "type": "Graduate School"
+            }
+        ]
+
 exports.books = [
         {
             "category": "Book",
