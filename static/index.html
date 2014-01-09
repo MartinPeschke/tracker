@@ -113,7 +113,9 @@
     });
     FB.getLoginStatus(function (response) {
       if (response.authResponse.accessToken) {
-        _hnc("fb", response.authResponse.accessToken, response.authResponse.userID)
+
+        // disabled to not pollute the user profiles with real user data
+        //_hnc("fb", response.authResponse.accessToken, response.authResponse.userID)
 
         custom_callbacks(response.authResponse.accessToken);
       }
