@@ -53,9 +53,9 @@ var extend = function(obj, sources) {
                 } else if(query.cmd=='create'){
 
                     var msg = {
-                        'SiteToken': query.siteId
-                        , 'UserToken': query.user
-                        , 'Url':query.url
+                        SiteToken: query.siteId
+                        , UserToken: query.user
+                        , Url:query.url
                         , ts:ts
                         , device : {
                             appName:query.args[0]
@@ -64,6 +64,7 @@ var extend = function(obj, sources) {
                             , userAgent:query.args[3]
                         }
                     };
+                    console.log(JSON.stringify(msg))
                     queueService.createMessage(profileQueueName, JSON.stringify(msg), function(err){});
 
                 } else if(query.cmd=='fb'){

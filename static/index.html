@@ -4,6 +4,11 @@
   <title></title>
 </head>
 <body>
+<!--
+==================================================================================================
+============================ Sample page for implementing HNC tracker ============================
+==================================================================================================
+-->
 
 <div>
   <div class="fb-login-button" data-max-rows="1" data-scope="user_likes,user_birthday,user_checkins,user_education_history,user_groups,user_interests,user_interests,user_location,user_photos,user_status" data-show-faces="false"></div>
@@ -16,23 +21,22 @@
 <div>
   <form id="run-events-form">
     tests <select class="no-runs">
-      <option>1</option>
-      <option>10</option>
-      <option>100</option>
-      <option>1000</option>
-      <option>5000</option>
-    </select>
+            <option>1</option>
+            <option>10</option>
+            <option>100</option>
+            <option>1000</option>
+            <option>5000</option>
+          </select>
     users <select class="no-users">
-      <option>1</option>
-      <option>10</option>
-      <option>100</option>
-      <option>1000</option>
-      <option>5000</option>
-    </select>
+            <option>1</option>
+            <option>10</option>
+            <option>100</option>
+            <option>1000</option>
+            <option>5000</option>
+          </select>
     <button type="submit">Run x Tests with y Users</button>
   </form>
 </div>
-
 <hr/>
 <h3>FB tests</h3>
 <div>
@@ -62,29 +66,40 @@
 
     <button type="submit">Submit n fb-profile-events</button>
   </form>
-
 </div>
 
+
+<!--
+==================================================================================================
+======================================= HNC TRACKER START ========================================
+==================================================================================================
+-->
+
+<!-- GLOBAL SNIPPET TO BE INCLUDED ON EVERY PAGE-->
 <script>
-  // ============== TRACKER ==============
-  (function (i, s, o, g, r, a, m) {
-    i['HNCWebTrckrObject'] = r;
-    i[r] = i[r] || function () {
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date();
-    a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-    a.async = 1;
-    a.src = g;
-    m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', '/t.js', '_hnc');
+
+  (function (i, s, o, g, r, a, m) {i['HNCWebTrckrObject'] = r;i[r] = i[r] || function ()
+  {(i[r].q = i[r].q || []).push(arguments)}, i[r].l = 1 * new Date();a = s.createElement(o),
+  m = s.getElementsByTagName(o)[0];a.async = 1;a.src = g;m.parentNode.insertBefore(a, m)}
+  )(window, document, 'script', '/t.js', '_hnc');
   _hnc('create', 'HNC-1', 'auto');
 </script>
 
+<!-- PER EVENT JS SNIPPET-->
 <script>
   _hnc('event', 'SIGNUP');
 </script>
 
+<!--
+==================================================================================================
+======================================= HNC TRACKER END ==========================================
+==================================================================================================
+-->
+
+
+
+
+<!-- CUSTOM WEBPAGE CODE, HERE USED FOR TESTING FB TOKENS -->
 
 <div id="fb-root"></div>
 <script>
@@ -148,10 +163,10 @@
             }
             return shuffled.slice(0, size);
           };
-          var $total = $(".total"), total = 0
+  var $total = $(".total"), total = 0
           , handle = setInterval(function(){
-                          $total.html(total);
-              }, 100);
+            $total.html(total);
+          }, 100);
 
   /// ============== CUSTOM CODE
   var APP_ACCESS_TOKEN = '521537951191110|7bVpwcDa5P2SNAptgabUS_0nOII'
