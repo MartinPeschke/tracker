@@ -22,6 +22,7 @@ var monster={set:function(a,b,c,d,e){var f=new Date,g="",h=typeof b,i="",j="";if
         , siteId
         , cooks = monster.get(hncCN)
         , sl = Array.prototype.slice
+        , n = window.navigator
         , preQ = window[HNCWebTrckrObject].q
         , serialize = function(obj) {
           var str = [];
@@ -48,16 +49,17 @@ var monster={set:function(a,b,c,d,e){var f=new Date,g="",h=typeof b,i="",j="";if
             if(cmd==='create'){
                 siteId = arguments[1];
                 domain = arguments[2];
-                pixel({'cmd':"page_view"})
+
+                if(!cooks){
+                    cooks = UUID();
+                    monster.set(hncCN, cooks, 3560);
+                    pixel({'cmd':"create", args: [n.appName, n.version, n.platform, n.userAgent].join("|")})
+                }
             } else {
-                pixel({'cmd':cmd, args: sl.call(arguments, 1).join("-|-")})
+                pixel({'cmd':cmd, args: sl.call(arguments, 1).join("|")})
             }
         };
 
-        if(!cooks){
-            cooks = UUID();
-            monster.set(hncCN, cooks, 3560);
-        }
 
         for(var i=0;i<preQ.length;i++){
             _hnc.apply(window, preQ[i])

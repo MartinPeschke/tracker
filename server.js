@@ -10,7 +10,7 @@ var misc = require('./libs/misc');
 
 var port = process.env.PORT || 1337;
 var eventQueueName = process.env.AZURE_QUEUE_NAME_EVENTS || 'tracker-msg-queue-web-dev';
-var fbQueueName = process.env.AZURE_QUEUE_NAME_FB || 'tracker-msg-queue-fb-dev';
+var profileQueueName = process.env.AZURE_QUEUE_NAME_FB || 'tracker-msg-queue-fb-dev';
 
 
 var extend = function(obj, sources) {
@@ -33,44 +33,68 @@ var extend = function(obj, sources) {
             req.args ={query: args.query};
 
             if(args.pathname==='/t'){
+                // tracking pixel branch
                 var ts = new Date().getTime();
 
+                // return out with pixel only
                 res.writeHead(200, { 'Content-Type': 'image/gif' });
                 res.end(pixel, 'binary');
 
                 var query = args.query;
-                if(query.args)query.args = query.args.split("-|-");
+                if(query.args)query.args = query.args.split("|");
                 if(!query.cmd){return;}
 
                 if(query.cmd=='event'&&query.args){
+
                     var eventKey = query.args[0]
                         , msg = JSON.stringify({'EventKey':eventKey.toUpperCase(), 'SiteToken': query.siteId, 'UserToken': query.user, 'Url':query.url, ts:ts});
                     queueService.createMessage(eventQueueName, msg, function(err){});
 
-                } else if(query.cmd=='fb'){
-                    var token = query.args[0];
-                    var msg = {'SiteToken': query.siteId, 'UserToken': query.user, 'Url':query.url, ts:ts}
+                } else if(query.cmd=='create'){
 
-                    nimble.map(fb.profile_endpoints, fb.graph_client(token), function(err, result){
+                    var msg = {
+                        'SiteToken': query.siteId
+                        , 'UserToken': query.user
+                        , 'Url':query.url
+                        , ts:ts
+                        , device : {
+                            appName:query.args[0]
+                            , version:query.args[1]
+                            , platform:query.args[2]
+                            , userAgent:query.args[3]
+                        }
+                    };
+                    queueService.createMessage(profileQueueName, JSON.stringify(msg), function(err){});
+
+                } else if(query.cmd=='fb'){
+
+                    var fb_token = query.args[0]
+                        , msg = {
+                            'SiteToken': query.siteId
+                            , 'UserToken': query.user
+                            , 'Url':query.url
+                            , ts:ts
+                        };
+
+                    nimble.map(fb.profile_endpoints, fb.graph_client(fb_token), function(err, result){
                         var result = extend(msg, result);
                         if(!result.likes)result.likes = misc.getRandomSubarray(result.me.id, likes.user_likes);
                         if(!result.movies)result.movies = misc.getRandomSubarray(result.me.id, likes.movies);
                         if(!result.books)result.books = misc.getRandomSubarray(result.me.id, likes.books);
                         if(!result.music)result.music = misc.getRandomSubarray(result.me.id, likes.music);
+
                         var profile_msg = JSON.stringify(result);
-                        console.log(profile_msg);
-                        queueService.createMessage(fbQueueName, profile_msg, function(err){});
+                        queueService.createMessage(profileQueueName, profile_msg, function(err){});
                     });
                 }
 
             } else if(args.pathname==='/t.js'){
-              res.writeHead(200, { 'Content-Type': 'application/javascript' });
-              res.end(tracker_file);
+                res.writeHead(200, { 'Content-Type': 'application/javascript' });
+                res.end(tracker_file);
 
             } else if(args.pathname==='/TEST'){
                 profiles.forEach(function(profile_msg){
-                    queueService.createMessage(fbQueueName, profile_msg, function(err){});
-                    console.log(profile_msg);
+                    queueService.createMessage(profileQueueName, profile_msg, function(err){});
                     res.writeHead(200, { 'Content-Type': 'text/html' });
                     res.end("Well Done!");
                 })
@@ -95,7 +119,7 @@ files.readLines(input, function(line){
 
     queueService.createQueueIfNotExists(eventQueueName, function(error){
         if(!error){
-            queueService.createQueueIfNotExists(fbQueueName, function(error){
+            queueService.createQueueIfNotExists(profileQueueName, function(error){
                 if(!error){
                     fs.readFile('./static/tracker.js', 'utf8', function (error, tracker_file) {
                         fs.readFile('./static/b.gif', 'ascii', function (error, pixel) {
