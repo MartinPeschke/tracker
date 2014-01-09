@@ -64,7 +64,6 @@ var extend = function(obj, sources) {
                             , userAgent:query.args[3]
                         }
                     };
-                    console.log(JSON.stringify(msg))
                     queueService.createMessage(profileQueueName, JSON.stringify(msg), function(err){});
 
                 } else if(query.cmd=='fb'){
