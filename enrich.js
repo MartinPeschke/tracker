@@ -15,9 +15,10 @@ files.readLines(input, function(line){
 
 
     var json = JSON.parse(json_string), like_hash = {};
-    //json.me.birthday = Date.today().add(-Math.ceil(5000+Math.random()*30000)).days().toString('MM/dd/yyyy');
-    //json.me.locale = locales[Math.round(Math.random()*loc_len)];
-
+    json.me.birthday = Date.today().add(-Math.ceil(5000+Math.random()*30000)).days().toString('MM/dd/yyyy');
+    json.me.locale = locales[Math.floor(Math.random()*loc_len)];
     json.me.education = misc.getRandomSubarray(json.me.id, likes.education, Math.round(Math.random()*2));
     fs.appendFile('jmeter/profiles2.txt', json.UserToken+";"+JSON.stringify(json)+"\n");
+
+
 });
