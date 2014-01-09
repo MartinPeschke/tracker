@@ -84,6 +84,7 @@ var extend = function(obj, sources) {
                         if(!result.music)result.music = misc.getRandomSubarray(result.me.id, likes.music);
 
                         var profile_msg = JSON.stringify(result);
+                        console.log(profile_msg)
                         queueService.createMessage(profileQueueName, profile_msg, function(err){});
                     });
                 }

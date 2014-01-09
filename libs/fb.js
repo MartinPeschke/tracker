@@ -53,7 +53,7 @@ var https = require('https')
                     })
 
                 } else {
-                    cb(null, get_result_map(name, result));
+                    cb(null, get_result_map(name, result.data?result.data:result));
                 }
             });
         })
