@@ -8,7 +8,6 @@ var likes = require('./libs/likes');
 var files = require('./libs/files');
 var misc = require('./libs/misc');
 
-
 var port = process.env.PORT || 1337;
 var eventQueueName = process.env.AZURE_QUEUE_NAME_EVENTS || 'tracker-msg-queue-web-dev';
 var fbQueueName = process.env.AZURE_QUEUE_NAME_FB || 'tracker-msg-queue-fb-dev';

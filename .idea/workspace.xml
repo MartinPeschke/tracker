@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b46cdbbb-72d4-46b6-93e3-3b8c18b87ff1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/index.html" afterPath="$PROJECT_DIR$/static/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
     </list>
     <ignored path="tracker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,10 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="server.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="41" selection-start="3838" selection-end="3838" vertical-scroll-proportion="0.0" vertical-offset="560" max-vertical-offset="1534">
+            <state line="10" column="0" selection-start="281" selection-end="281" vertical-scroll-proportion="0.30444965" vertical-offset="0" max-vertical-offset="1521">
               <folding />
             </state>
           </provider>
@@ -46,10 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="enrich.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="enrich.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/enrich.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="922" selection-end="922" vertical-scroll-proportion="0.7002342" vertical-offset="0" max-vertical-offset="427">
+            <state line="23" column="0" selection-start="922" selection-end="922" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="377">
               <folding />
             </state>
           </provider>
@@ -128,11 +128,11 @@
         <option value="$PROJECT_DIR$/static/tracker.js" />
         <option value="$PROJECT_DIR$/libs/fb.js" />
         <option value="$PROJECT_DIR$/libs/files.js" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/libs/likes.js" />
         <option value="$PROJECT_DIR$/enrich.js" />
         <option value="$PROJECT_DIR$/libs/misc.js" />
         <option value="$PROJECT_DIR$/static/index.html" />
+        <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
   </component>
@@ -634,13 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="41" selection-start="3838" selection-end="3838" vertical-scroll-proportion="0.0" vertical-offset="560" max-vertical-offset="1534">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libs/likes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="167" column="17" selection-start="4951" selection-end="4951" vertical-scroll-proportion="-3.56" vertical-offset="1993" max-vertical-offset="20410">
@@ -671,7 +664,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/enrich.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="922" selection-end="922" vertical-scroll-proportion="0.7002342" vertical-offset="0" max-vertical-offset="427">
+        <state line="23" column="0" selection-start="922" selection-end="922" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="377">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="281" selection-end="281" vertical-scroll-proportion="0.30444965" vertical-offset="0" max-vertical-offset="1521">
           <folding />
         </state>
       </provider>
