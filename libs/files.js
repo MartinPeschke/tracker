@@ -19,6 +19,6 @@ exports.readLines = function (input, func, onEnd) {
     if (remaining.length > 0) {
       func(remaining);
     }
-    onEnd();
+    if(onEnd)onEnd();
   });
 }

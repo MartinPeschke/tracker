@@ -1,6 +1,6 @@
 var https = require('https')
     , profile_endpoints = [
-          {endpoint:"/me", name:"me"}
+          {endpoint:"/me", name:"me", fields:"id,name,picture,gender,timezone,locale,birthday,first_name,middle_name,last_name,age_range"}
         , {endpoint:"/me/likes", name:"likes"}
         , {endpoint:"/me/activities", name:"activities"}
         , {endpoint:"/me/checkins", name:"checkins"}
