@@ -11,7 +11,7 @@
 -->
 
 <div>
-  <div class="fb-login-button" data-max-rows="1" data-scope="user_likes,user_birthday,user_checkins,user_education_history,user_groups,user_interests,user_interests,user_location,user_photos,user_status" data-show-faces="false"></div>
+  <div class="fb-login-button" data-max-rows="1" data-scope="user_about_me,user_birthday,user_location,user_education_history,user_work_history,user_likes" data-show-faces="false"></div>
 </div>
 
 <hr/>
@@ -77,12 +77,11 @@
 
 <!-- GLOBAL SNIPPET TO BE INCLUDED ON EVERY PAGE-->
 <script>
-
   (function (i, s, o, g, r, a, m) {i['HNCWebTrckrObject'] = r;i[r] = i[r] || function ()
   {(i[r].q = i[r].q || []).push(arguments)}, i[r].l = 1 * new Date();a = s.createElement(o),
   m = s.getElementsByTagName(o)[0];a.async = 1;a.src = g;m.parentNode.insertBefore(a, m)}
   )(window, document, 'script', '/t.js', '_hnc');
-  _hnc('create', 'HNC-1', 'auto');
+  _hnc('create', 'FRIENDFUND', 'friendfund.com');
 </script>
 
 <!-- PER EVENT JS SNIPPET-->
@@ -112,7 +111,7 @@
       xfbml: true                                  // Look for social plugins on the page
     });
     FB.getLoginStatus(function (response) {
-      if (response.authResponse.accessToken) {
+      if (response.authResponse&&response.authResponse.accessToken) {
 
         // disabled to not pollute the user profiles with real user data
         //_hnc("fb", response.authResponse.accessToken, response.authResponse.userID)

@@ -43,7 +43,7 @@ var monster={set:function(a,b,c,d,e){var f=new Date,g="",h=typeof b,i="",j="";if
             a.async=1;
             a.style.display='none';
             a.onload=a.onerror=function(){a.onload=null;a.onerror=null;onl&&onl();}
-            a.src="/t?"+serialize(args);
+            a.src="http://trackerdev.azurewebsites.net/t?"+serialize(args);
         }
         , _hnc = function(cmd){
             if(cmd==='create'){
